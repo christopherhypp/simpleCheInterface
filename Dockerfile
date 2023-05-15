@@ -7,7 +7,7 @@ RUN npm run build --omit=dev
 
 # Serve Application using Nginx Server
 FROM nginx:alpine
-COPY --from=build /app/dist/simpleCheInterface/ /usr/share/nginx/html
+COPY --from=build /app/dist/simple-che-interface/ /usr/share/nginx/html
 EXPOSE 80
 
 # Serve Application using Npm
